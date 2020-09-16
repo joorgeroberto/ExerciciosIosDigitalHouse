@@ -13,5 +13,5 @@ Desafio do dia 14/09/2020.
 * Podem ser cadastrados infinitos usuários enquanto o app estiver aberto.
 
 ### Preview: <br>
-<img src="https://j.gifs.com/oV1PGk.gif" width="250" />
+[![Demo](https://j.gifs.com/oV1PGk.gif)](https://www.youtube.com/watch?v=j3fJnAL_j3k)
 
