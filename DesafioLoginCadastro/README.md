@@ -1,7 +1,7 @@
 # Desafio Login e Cadastro
 ## Digital House - Turma 01 - IOS (Swift)
 
-Desafio para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.
+Desafio para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.<br />
 Desafio do dia 14/09/2020.
 
 
