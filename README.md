@@ -4,5 +4,5 @@ Repositórios com desafios e exercícios desenvolvidos no curso curso de IOS com
 Curso promovido pelo Programa Santander Coders.<br/>
 
 
-### Desafios:
+### Exercícios e Desafios:
 * [Desafio login e cadastro](https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/tree/master/DesafioLoginCadastro)
