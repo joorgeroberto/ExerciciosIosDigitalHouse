@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Sa-rx-3Ke">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ExercicioNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swY-eB-FCi">
+                                <rect key="frame" x="166" y="108" width="82" height="30"/>
+                                <state key="normal" title="MyViewOne"/>
+                                <connections>
+                                    <action selector="actionMyViewOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fy9-x4-627"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnL-mg-9Rf">
+                                <rect key="frame" x="138" y="148" width="138" height="30"/>
+                                <state key="normal" title="MyViewOne Pushed"/>
+                                <connections>
+                                    <action selector="actionMyViewOnePushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pp-BM-Ckq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-Xs-P3S">
+                                <rect key="frame" x="143" y="188" width="128" height="30"/>
+                                <state key="normal" title="MyViewOne Modal"/>
+                                <connections>
+                                    <action selector="actionMyViewOneModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7SJ-6J-SDj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7S-G1-y81">
+                                <rect key="frame" x="166.5" y="298" width="81" height="30"/>
+                                <state key="normal" title="MyViewTwo"/>
+                                <connections>
+                                    <action selector="actionMyViewTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8v-bV-g6r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1U-6F-DBo">
+                                <rect key="frame" x="138.5" y="338" width="137" height="30"/>
+                                <state key="normal" title="MyViewTwo Pushed"/>
+                                <connections>
+                                    <action selector="actionMyViewTwoPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AD6-rC-xI3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMM-KX-7Ll">
+                                <rect key="frame" x="143.5" y="378" width="127" height="30"/>
+                                <state key="normal" title="MyViewTwo Modal"/>
+                                <connections>
+                                    <action selector="actionMyViewTwoModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Edl-A0-an4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-tt-kWB">
+                                <rect key="frame" x="160.5" y="488" width="93" height="30"/>
+                                <state key="normal" title="MyViewThree"/>
+                                <connections>
+                                    <action selector="actionMyViewThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESt-di-Ys5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-yh-zCF">
+                                <rect key="frame" x="137.5" y="568" width="139" height="30"/>
+                                <state key="normal" title="MyViewThree Modal"/>
+                                <connections>
+                                    <action selector="actionMyViewThreeModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ec-QF-lbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnK-C8-7sZ">
+                                <rect key="frame" x="133" y="528" width="148" height="30"/>
+                                <state key="normal" title="MyViewThree Pushed"/>
+                                <connections>
+                                    <action selector="actionMyViewThreePushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INy-vM-HxW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YnL-mg-9Rf" firstAttribute="top" secondItem="swY-eB-FCi" secondAttribute="bottom" constant="10" id="6er-Z6-tRu"/>
+                            <constraint firstItem="YnL-mg-9Rf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6zX-xd-wJc"/>
+                            <constraint firstItem="P1U-6F-DBo" firstAttribute="top" secondItem="N7S-G1-y81" secondAttribute="bottom" constant="10" id="AkO-Pf-NgX"/>
+                            <constraint firstItem="swY-eB-FCi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="I97-jS-NmH"/>
+                            <constraint firstItem="vMM-KX-7Ll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jfj-oB-HVa"/>
+                            <constraint firstItem="CnK-C8-7sZ" firstAttribute="top" secondItem="4T4-tt-kWB" secondAttribute="bottom" constant="10" id="Szu-nY-pnQ"/>
+                            <constraint firstItem="N7S-G1-y81" firstAttribute="top" secondItem="8Me-Xs-P3S" secondAttribute="bottom" constant="80" id="TV4-Nz-9Fz"/>
+                            <constraint firstItem="8Me-Xs-P3S" firstAttribute="top" secondItem="YnL-mg-9Rf" secondAttribute="bottom" constant="10" id="VwD-hR-aCu"/>
+                            <constraint firstItem="uC4-yh-zCF" firstAttribute="top" secondItem="CnK-C8-7sZ" secondAttribute="bottom" constant="10" id="WVF-yZ-QAA"/>
+                            <constraint firstItem="4T4-tt-kWB" firstAttribute="top" secondItem="vMM-KX-7Ll" secondAttribute="bottom" constant="80" id="ZTP-zw-Usn"/>
+                            <constraint firstItem="CnK-C8-7sZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dsj-rT-Jyg"/>
+                            <constraint firstItem="vMM-KX-7Ll" firstAttribute="top" secondItem="P1U-6F-DBo" secondAttribute="bottom" constant="10" id="mOF-a4-lgo"/>
+                            <constraint firstItem="P1U-6F-DBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="meC-bi-ZQi"/>
+                            <constraint firstItem="8Me-Xs-P3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nOX-Hx-leh"/>
+                            <constraint firstItem="swY-eB-FCi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYF-Zs-AGF"/>
+                            <constraint firstItem="uC4-yh-zCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s8r-xA-paL"/>
+                            <constraint firstItem="N7S-G1-y81" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIU-gy-Zag"/>
+                            <constraint firstItem="4T4-tt-kWB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yoM-Uc-iFT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Brw-zK-LhW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="136.60714285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yE2-vB-YQ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Sa-rx-3Ke" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GRp-hw-dNV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vFp-5H-mId"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1x-Sa-ZBH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>
