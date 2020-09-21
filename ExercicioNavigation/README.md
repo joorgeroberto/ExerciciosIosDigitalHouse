@@ -8,14 +8,14 @@ Desafio do dia 21/09/2020.
 ### Requisitos:
 * Criar 9 Telas:
     - MyViewOne
-    - MyViewOneModal
-    - MyViewOnePushed
+        - MyViewOneModal
+        - MyViewOnePushed
     - MyViewTwo
-    - MyViewTwoModal
-    - MyViewTwoPushed
+        - MyViewTwoModal
+        - MyViewTwoPushed
     - MyViewThree
-    -MyViewThreeModal
-    -MyViewThreePushed
+        - MyViewThreeModal
+        - MyViewThreePushed
 
 * O Main.Storyboard deve ser Embedded numa navigation.
 * O Main.Storyboard deve ter 9 botões, cada um chama uma tela, pelo navigation.
