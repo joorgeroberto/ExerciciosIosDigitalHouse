@@ -1,8 +1,8 @@
 # Exercício Navigation
 ## Digital House - Turma 01 - IOS (Swift)
 
-Desafio para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.<br />
-Desafio do dia 21/09/2020.
+Exercício para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.<br />
+Exercício do dia 21/09/2020.
 
 
 ### Requisitos:
