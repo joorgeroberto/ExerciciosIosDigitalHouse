@@ -1,7 +1,7 @@
 # Desafio Login e Cadastro
 ## Digital House - Turma 01 - IOS (Swift)
 
-Desafio para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.
+Desafio para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.<br />
 Desafio do dia 14/09/2020.
 
 
@@ -11,3 +11,7 @@ Desafio do dia 14/09/2020.
 * Quando o usuário logar com sucesso, deve exibir um alerta informando que logou com sucesso.
 * Se o usuário tentar logar mas não existir ou estiver inválido, deve exibir um alerta de usuário inválido.
 * Podem ser cadastrados infinitos usuários enquanto o app estiver aberto.
+
+### Preview: <br>
+[![Demo](https://j.gifs.com/oV1PGk.gif)](https://www.youtube.com/watch?v=j3fJnAL_j3k)
+
