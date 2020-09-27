@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sPp-LD-7qO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Detail View Controller-->
+        <scene sceneID="Wa9-cb-mFa">
+            <objects>
+                <viewController id="sPp-LD-7qO" customClass="CarDetailViewController" customModule="_925_ExercicioTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qdl-7o-uvW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRl-aL-0hx">
+                                <rect key="frame" x="20" y="59" width="95.5" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Button" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="actionBack:" destination="sPp-LD-7qO" eventType="touchUpInside" id="639-z9-x3A"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="doE-mI-DHz">
+                                <rect key="frame" x="30" y="114" width="354" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="2br-x2-ilM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP6-ta-xQh">
+                                <rect key="frame" x="186" y="64" width="42" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AjM-sm-SPP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MP6-ta-xQh" firstAttribute="top" secondItem="AjM-sm-SPP" secondAttribute="top" constant="20" id="6ne-JA-kVk"/>
+                            <constraint firstItem="MP6-ta-xQh" firstAttribute="centerX" secondItem="qdl-7o-uvW" secondAttribute="centerX" id="Apb-xs-t21"/>
+                            <constraint firstItem="doE-mI-DHz" firstAttribute="top" secondItem="sRl-aL-0hx" secondAttribute="bottom" constant="20" id="EBS-eT-x7B"/>
+                            <constraint firstItem="sRl-aL-0hx" firstAttribute="top" secondItem="AjM-sm-SPP" secondAttribute="top" constant="15" id="Keo-um-yDS"/>
+                            <constraint firstItem="AjM-sm-SPP" firstAttribute="trailing" secondItem="doE-mI-DHz" secondAttribute="trailing" constant="30" id="U9R-SZ-nRw"/>
+                            <constraint firstItem="doE-mI-DHz" firstAttribute="leading" secondItem="AjM-sm-SPP" secondAttribute="leading" constant="30" id="c95-gD-zDU"/>
+                            <constraint firstItem="doE-mI-DHz" firstAttribute="top" secondItem="MP6-ta-xQh" secondAttribute="bottom" constant="20" id="hum-4Y-JoE"/>
+                            <constraint firstItem="sRl-aL-0hx" firstAttribute="leading" secondItem="AjM-sm-SPP" secondAttribute="leading" constant="20" id="lYd-0V-20c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carImage" destination="doE-mI-DHz" id="aOp-20-GOQ"/>
+                        <outlet property="textLabel" destination="MP6-ta-xQh" id="iUc-u2-07H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9r6-Xw-cyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
