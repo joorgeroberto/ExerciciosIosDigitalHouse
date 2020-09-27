@@ -10,6 +10,4 @@ Exercício do dia 25/09/2020.
 * Quando a pessoa clicar no carro, deve imprimir a marca do veiculo selecionado.
 
 ### Preview: <br>
-[![Demo](https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/blob/master/0925_ExercicioTableView/appVideo.gif)
-
-
+<img src="https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/blob/master/0925_ExercicioTableView/appVideo.gif" width="300" />
