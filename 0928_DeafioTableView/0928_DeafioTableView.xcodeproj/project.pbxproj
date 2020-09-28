@@ -113,6 +113,7 @@
 		0B31C5C9252218E2008533FA /* 0928_DeafioTableView */ = {
 			isa = PBXGroup;
 			children = (
+				0B31C62025222738008533FA /* images */,
 				0B31C5CA252218E2008533FA /* AppDelegate.swift */,
 				0B31C5CC252218E2008533FA /* SceneDelegate.swift */,
 				0B31C5CE252218E2008533FA /* ViewController.swift */,
@@ -122,11 +123,6 @@
 				0B31C5D8252218E3008533FA /* Info.plist */,
 				0B31C5FD25221950008533FA /* MyCustomCell.swift */,
 				0B31C60225221ACB008533FA /* Developer.swift */,
-				0B31C60C25222139008533FA /* jorge.jpeg */,
-				0B31C6112522231C008533FA /* msaidel.jpeg */,
-				0B31C6162522236A008533FA /* michel.jpeg */,
-				0B31C60725221D82008533FA /* narlei.jpeg */,
-				0B31C61B252223FB008533FA /* jessica.jpeg */,
 			);
 			path = 0928_DeafioTableView;
 			sourceTree = "<group>";
@@ -147,6 +143,18 @@
 				0B31C5EE252218E3008533FA /* Info.plist */,
 			);
 			path = 0928_DeafioTableViewUITests;
+			sourceTree = "<group>";
+		};
+		0B31C62025222738008533FA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0B31C60C25222139008533FA /* jorge.jpeg */,
+				0B31C6112522231C008533FA /* msaidel.jpeg */,
+				0B31C6162522236A008533FA /* michel.jpeg */,
+				0B31C60725221D82008533FA /* narlei.jpeg */,
+				0B31C61B252223FB008533FA /* jessica.jpeg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

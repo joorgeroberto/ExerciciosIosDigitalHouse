@@ -20,11 +20,11 @@ class ViewController: UIViewController {
         tableViewList.delegate = self
         tableViewList.dataSource = self
         
-        arrayNames.append(Developer(name: "Jorge", image: "jorge.jpeg"))
-        arrayNames.append(Developer(name: "Marcela", image: "msaidel.jpeg"))
-        arrayNames.append(Developer(name: "Michel", image: "michel.jpeg"))
-        arrayNames.append(Developer(name: "Narlei", image: "narlei.jpeg"))
-        arrayNames.append(Developer(name: "Jéssica", image: "jessica.jpeg"))
+        arrayNames.append(Developer(name: "Jorge", image: "jorge.jpeg", email: "jorgercj@dcomp.ufs.br"))
+        arrayNames.append(Developer(name: "Marcela", image: "msaidel.jpeg", email: "msaidel@gmail.com"))
+        arrayNames.append(Developer(name: "Michel", image: "michel.jpeg", email: "michelsantos@gmail.com"))
+        arrayNames.append(Developer(name: "Narlei", image: "narlei.jpeg", email: "contato@narlei.com"))
+        arrayNames.append(Developer(name: "Jéssica", image: "jessica.jpeg", email: "jeafsantana@gmail.com"))
         
         tableViewList.reloadData()
 
@@ -56,7 +56,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MyCustomCell
-        cell.setup(developer: arrayNames[indexPath.row], indexPath: indexPath.row)
+        cell.setup(developer: arrayNames[indexPath.row])
         return cell
     }
     

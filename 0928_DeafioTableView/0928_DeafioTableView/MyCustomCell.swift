@@ -11,20 +11,20 @@ class MyCustomCell: UITableViewCell {
 
     @IBOutlet weak var devImage: UIImageView!
     @IBOutlet weak var devName: UILabel!
+    @IBOutlet weak var devEmail: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         devImage.layer.cornerRadius = 20
     }
 
-    func setup(developer: Developer, indexPath: Int) {
+    func setup(developer: Developer) {
         devImage.image = nil
         devName.text = ""
+        devEmail.text = ""
         
         devImage.image = UIImage(named: developer.image)
         devName.text = developer.name
-        if(indexPath % 2 == 0) {
-            self.backgroundColor = .lightGray
-        }
+        devEmail.text = developer.email
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

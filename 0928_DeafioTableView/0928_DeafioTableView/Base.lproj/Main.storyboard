@@ -27,15 +27,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmI-3e-3Wp">
-                                                    <rect key="frame" x="66" y="25.5" width="312" height="21.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="PZR-HG-KmW"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="KKg-FF-mOL">
+                                                    <rect key="frame" x="72" y="16" width="47" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmI-3e-3Wp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfZ-sx-NL2">
+                                                            <rect key="frame" x="0.0" y="21.5" width="39" height="19.5"/>
+                                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qxa-6t-YqP">
                                                     <rect key="frame" x="16" y="16" width="40" height="40.5"/>
                                                     <constraints>
@@ -46,14 +55,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qxa-6t-YqP" firstAttribute="leading" secondItem="WOX-qP-4et" secondAttribute="leading" constant="16" id="BLK-S9-C7r"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="HmI-3e-3Wp" secondAttribute="trailing" constant="16" id="C8w-4C-mBu"/>
-                                                <constraint firstItem="HmI-3e-3Wp" firstAttribute="leading" secondItem="WOX-qP-4et" secondAttribute="leadingMargin" constant="46" id="K4S-33-emI"/>
                                                 <constraint firstAttribute="bottom" secondItem="qxa-6t-YqP" secondAttribute="bottom" constant="16" id="dRW-Ky-RR0"/>
-                                                <constraint firstItem="HmI-3e-3Wp" firstAttribute="centerY" secondItem="WOX-qP-4et" secondAttribute="centerY" id="i8I-KO-fsJ"/>
+                                                <constraint firstItem="KKg-FF-mOL" firstAttribute="leading" secondItem="qxa-6t-YqP" secondAttribute="trailing" constant="16" id="en7-px-uzW"/>
                                                 <constraint firstItem="qxa-6t-YqP" firstAttribute="centerY" secondItem="WOX-qP-4et" secondAttribute="centerY" id="iTz-fd-314"/>
+                                                <constraint firstItem="KKg-FF-mOL" firstAttribute="centerY" secondItem="WOX-qP-4et" secondAttribute="centerY" id="yRQ-p8-GO3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="devEmail" destination="pfZ-sx-NL2" id="iOx-sf-6if"/>
                                             <outlet property="devImage" destination="qxa-6t-YqP" id="nd9-wF-XJw"/>
                                             <outlet property="devName" destination="HmI-3e-3Wp" id="fIb-2X-7YS"/>
                                         </connections>

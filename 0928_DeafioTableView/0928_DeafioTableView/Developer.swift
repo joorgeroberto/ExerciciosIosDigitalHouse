@@ -10,9 +10,11 @@ import Foundation
 class Developer {
     var name: String
     var image: String
+    var email: String
     
-    init(name: String, image: String) {
+    init(name: String, image: String, email: String) {
         self.name = name
+        self.email = email
         self.image = image
     }
 }
