@@ -1,4 +1,4 @@
-# Desafio TableView e CollectionView
+# Desafios TableView e CollectionView
 ## Digital House - Turma 01 - IOS (Swift)
 
 Desafios para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.<br />
