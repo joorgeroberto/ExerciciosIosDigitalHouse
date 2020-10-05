@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRk-jS-cD3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CarDetailViewController-->
+        <scene sceneID="8sh-xf-z6o">
+            <objects>
+                <viewController title="CarDetailViewController" id="wRk-jS-cD3" customClass="CarDetailViewController" customModule="_930_DesafioCollectionView_Carros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CIg-M5-ypr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n2J-Z2-Ejq">
+                                <rect key="frame" x="20" y="64" width="374" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n2J-Z2-Ejq" secondAttribute="height" multiplier="187:64" id="Yfk-ya-vI2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hfN-58-cC4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hfN-58-cC4" firstAttribute="trailing" secondItem="n2J-Z2-Ejq" secondAttribute="trailing" constant="20" id="BVA-8Q-y3Y"/>
+                            <constraint firstItem="n2J-Z2-Ejq" firstAttribute="top" secondItem="hfN-58-cC4" secondAttribute="top" constant="20" id="c5S-JX-uIt"/>
+                            <constraint firstItem="n2J-Z2-Ejq" firstAttribute="leading" secondItem="hfN-58-cC4" secondAttribute="leading" constant="20" id="rZQ-uh-U9E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carImage" destination="n2J-Z2-Ejq" id="RNa-Vh-oja"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pva-1Y-3fp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
