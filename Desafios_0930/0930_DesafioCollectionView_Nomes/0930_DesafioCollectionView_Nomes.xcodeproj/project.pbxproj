@@ -15,6 +15,7 @@
 		0B9E0E48252AC42A005213DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9E0E46252AC42A005213DE /* LaunchScreen.storyboard */; };
 		0B9E0E53252AC42A005213DE /* _930_DesafioCollectionView_NomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E0E52252AC42A005213DE /* _930_DesafioCollectionView_NomesTests.swift */; };
 		0B9E0E5E252AC42A005213DE /* _930_DesafioCollectionView_NomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E0E5D252AC42A005213DE /* _930_DesafioCollectionView_NomesUITests.swift */; };
+		0B9E0E74252AC573005213DE /* NameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E0E73252AC573005213DE /* NameCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0B9E0E59252AC42A005213DE /* 0930_DesafioCollectionView_NomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 0930_DesafioCollectionView_NomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9E0E5D252AC42A005213DE /* _930_DesafioCollectionView_NomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _930_DesafioCollectionView_NomesUITests.swift; sourceTree = "<group>"; };
 		0B9E0E5F252AC42A005213DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B9E0E73252AC573005213DE /* NameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0B9E0E3B252AC429005213DE /* AppDelegate.swift */,
+				0B9E0E73252AC573005213DE /* NameCollectionViewCell.swift */,
 				0B9E0E3D252AC429005213DE /* SceneDelegate.swift */,
 				0B9E0E3F252AC429005213DE /* ViewController.swift */,
 				0B9E0E41252AC429005213DE /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9E0E74252AC573005213DE /* NameCollectionViewCell.swift in Sources */,
 				0B9E0E40252AC429005213DE /* ViewController.swift in Sources */,
 				0B9E0E3C252AC429005213DE /* AppDelegate.swift in Sources */,
 				0B9E0E3E252AC429005213DE /* SceneDelegate.swift in Sources */,

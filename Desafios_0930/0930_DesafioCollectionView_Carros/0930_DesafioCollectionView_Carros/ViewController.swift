@@ -58,11 +58,11 @@ extension ViewController: UICollectionViewDataSource {
             return arrayCars.count
         }
         
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCollectionViewCell", for: indexPath) as! CarCollectionViewCell
-            cell.setup(arrayCars[indexPath.row])
-            return cell
-        }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCollectionViewCell", for: indexPath) as! CarCollectionViewCell
+        cell.setup(arrayCars[indexPath.row])
+        return cell
+    }
         
 }
 
