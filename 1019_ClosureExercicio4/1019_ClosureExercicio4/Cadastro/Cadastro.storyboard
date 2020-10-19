@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="020-Z7-IXJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cadastro View Controller-->
+        <scene sceneID="Ocj-LR-taF">
+            <objects>
+                <viewController id="020-Z7-IXJ" customClass="CadastroViewController" customModule="_019_ClosureExercicio4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R0o-AK-4oH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ux-2j-385">
+                                <rect key="frame" x="20" y="64" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7VY-aP-OJu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="XQw-v9-htN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kdz-a7-ZSc">
+                                <rect key="frame" x="20" y="132" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ndS-Ra-pOG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-WF-oZt">
+                                <rect key="frame" x="20" y="200" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-IX-LG5">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cadastrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerAction:" destination="020-Z7-IXJ" eventType="touchUpInside" id="aWK-OP-e6E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="czl-om-fpa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kdz-a7-ZSc" firstAttribute="top" secondItem="9Ux-2j-385" secondAttribute="bottom" constant="20" id="0fY-4T-34I"/>
+                            <constraint firstItem="czl-om-fpa" firstAttribute="trailing" secondItem="Meh-WF-oZt" secondAttribute="trailing" constant="20" id="1Fx-Vs-uco"/>
+                            <constraint firstItem="Meh-WF-oZt" firstAttribute="top" secondItem="Kdz-a7-ZSc" secondAttribute="bottom" constant="20" id="5Vy-z9-JUJ"/>
+                            <constraint firstItem="Kdz-a7-ZSc" firstAttribute="leading" secondItem="czl-om-fpa" secondAttribute="leading" constant="20" id="7EJ-d8-KKR"/>
+                            <constraint firstItem="czl-om-fpa" firstAttribute="trailing" secondItem="Kdz-a7-ZSc" secondAttribute="trailing" constant="20" id="90j-Xa-op7"/>
+                            <constraint firstItem="Meh-WF-oZt" firstAttribute="top" secondItem="Kdz-a7-ZSc" secondAttribute="bottom" constant="20" id="Bni-ow-7HN"/>
+                            <constraint firstItem="9Ux-2j-385" firstAttribute="top" secondItem="czl-om-fpa" secondAttribute="top" constant="20" id="N1B-P4-Qtr"/>
+                            <constraint firstItem="9Ux-2j-385" firstAttribute="leading" secondItem="czl-om-fpa" secondAttribute="leading" constant="20" id="Owk-D1-WCg"/>
+                            <constraint firstItem="czl-om-fpa" firstAttribute="trailing" secondItem="9Ux-2j-385" secondAttribute="trailing" constant="20" id="bR6-IK-gcs"/>
+                            <constraint firstItem="Kdz-a7-ZSc" firstAttribute="top" secondItem="9Ux-2j-385" secondAttribute="bottom" constant="20" id="iFK-HS-H6v"/>
+                            <constraint firstItem="Kdz-a7-ZSc" firstAttribute="top" secondItem="9Ux-2j-385" secondAttribute="bottom" constant="20" id="mKr-WS-JsI"/>
+                            <constraint firstItem="Meh-WF-oZt" firstAttribute="leading" secondItem="czl-om-fpa" secondAttribute="leading" constant="20" id="oQP-HD-8Z8"/>
+                            <constraint firstItem="9Ux-2j-385" firstAttribute="top" secondItem="czl-om-fpa" secondAttribute="top" constant="20" id="owR-hZ-KBe"/>
+                            <constraint firstItem="Meh-WF-oZt" firstAttribute="top" secondItem="Kdz-a7-ZSc" secondAttribute="bottom" constant="20" id="tar-ry-I7P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="9Ux-2j-385" id="dtI-s7-dSP"/>
+                        <outlet property="passwordTextField" destination="Kdz-a7-ZSc" id="XJ7-Rf-APn"/>
+                        <outlet property="registerAction" destination="oIA-IX-LG5" id="fuU-M3-rHr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nj4-MH-fTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
