@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q1L-I5-pYg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="BnP-SR-Mho">
+            <objects>
+                <viewController id="Q1L-I5-pYg" customClass="MovieDetailViewController" customModule="SpiderDigital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1PG-HK-h7O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IiN-dv-1SL">
+                                <rect key="frame" x="52" y="64" width="310" height="165.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IiN-dv-1SL" secondAttribute="height" multiplier="15:8" id="Uux-8O-TOg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIDER MAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF7-kw-cry">
+                                <rect key="frame" x="0.0" y="257.5" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KOo-18-DOT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KOo-18-DOT" firstAttribute="trailing" secondItem="IiN-dv-1SL" secondAttribute="trailing" constant="52" id="3ZE-tc-N2L"/>
+                            <constraint firstItem="aF7-kw-cry" firstAttribute="top" secondItem="IiN-dv-1SL" secondAttribute="bottom" constant="28" id="8sM-eX-5ED"/>
+                            <constraint firstItem="KOo-18-DOT" firstAttribute="trailing" secondItem="aF7-kw-cry" secondAttribute="trailing" id="KAg-5K-Lkt"/>
+                            <constraint firstItem="IiN-dv-1SL" firstAttribute="leading" secondItem="KOo-18-DOT" secondAttribute="leading" constant="52" id="R5y-NF-KA7"/>
+                            <constraint firstItem="aF7-kw-cry" firstAttribute="leading" secondItem="KOo-18-DOT" secondAttribute="leading" id="jbM-yY-qQJ"/>
+                            <constraint firstItem="IiN-dv-1SL" firstAttribute="top" secondItem="KOo-18-DOT" secondAttribute="top" constant="20" id="mzd-mj-FfD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieImage" destination="IiN-dv-1SL" id="R7D-Rh-1nL"/>
+                        <outlet property="movieNameLabel" destination="aF7-kw-cry" id="y91-F5-kNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKn-ec-qkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
