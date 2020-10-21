@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBAction func registerAction(_ sender: Any) {
         if let viewController = UIStoryboard(name: "Cadastro", bundle: nil).instantiateInitialViewController() as? CadastroViewController {
-                present(viewController, animated: true, completion: nil)
-            viewController.register(completion: {(login, password) in
-                loginTextField.text = login
-                passwordTextField.text = password
-            })
+            //viewController.register((login, password) in
+            // OU
+            viewController.register{ (login, password) in
+                print(login, password)
+                self.loginTextField.text = login
+                self.passwordTextField.text = password
+            }
+            print(viewController)
+            present(viewController, animated: true, completion: nil)
         }
     }
     override func viewDidLoad() {

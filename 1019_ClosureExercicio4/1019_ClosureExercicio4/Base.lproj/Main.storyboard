@@ -51,7 +51,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="registerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yX8-Pq-nEV"/>
+                                            <action selector="registerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCX-fB-RWF"/>
                                         </connections>
                                     </button>
                                 </subviews>

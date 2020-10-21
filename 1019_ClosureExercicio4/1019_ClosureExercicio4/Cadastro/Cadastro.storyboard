@@ -44,7 +44,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="registerAction:" destination="020-Z7-IXJ" eventType="touchUpInside" id="aWK-OP-e6E"/>
+                                            <action selector="registerAction:" destination="020-Z7-IXJ" eventType="touchUpInside" id="f7Y-FK-XYI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,7 +72,6 @@
                     <connections>
                         <outlet property="loginTextField" destination="9Ux-2j-385" id="dtI-s7-dSP"/>
                         <outlet property="passwordTextField" destination="Kdz-a7-ZSc" id="XJ7-Rf-APn"/>
-                        <outlet property="registerAction" destination="oIA-IX-LG5" id="fuU-M3-rHr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj4-MH-fTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

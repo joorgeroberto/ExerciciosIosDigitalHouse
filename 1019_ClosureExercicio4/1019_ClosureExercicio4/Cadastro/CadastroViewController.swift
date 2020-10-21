@@ -18,19 +18,23 @@ import UIKit
 
 class CadastroViewController: UIViewController {
 
+    var onSave: ((_ login: String, _ password: String) -> Void)?
+    
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+
     @IBAction func registerAction(_ sender: Any) {
-        if(!loginTextField.text!.isEmpty && !passwordTextField.text!.isEmpty) {
-            var registerVar: (_ login: String, _ password: String) -> Void
-        }
+        //if(!loginTextField.text!.isEmpty && !passwordTextField.text!.isEmpty) {
+            onSave?(loginTextField.text!, passwordTextField.text!)
+            dismiss(animated: true, completion: nil)
+        //}
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    func register(completion: (_ login: String, _ password: String) -> Void) {
-        completion(loginTextField.text!, passwordTextField.text!)
+    func register(onSave: @escaping (_ login: String, _ password: String) -> Void) {
+        self.onSave = onSave
     }
 }
