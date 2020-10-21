@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     @objc func createView() {
-        let newView = UIView(frame: CGRect(x: 0, y: positionYCurrent, width: 50, height: 50))
+        let newView = UIView(frame: CGRect(x: (Int(self.view.frame.size.width / 2) - 25 ), y: positionYCurrent, width: 50, height: 50))
         newView.backgroundColor = .random
         view.addSubview(newView)
         positionYCurrent += 50
