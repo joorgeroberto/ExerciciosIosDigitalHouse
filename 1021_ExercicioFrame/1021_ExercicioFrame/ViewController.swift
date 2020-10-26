@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         createView()
     }
-
+    
     @objc func createView() {
         let newView = UIView(frame: CGRect(x: (Int(self.view.frame.size.width / 2) - 25 ), y: positionYCurrent, width: 50, height: 50))
         newView.backgroundColor = .random
@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         positionYCurrent += 50
         let tap = UITapGestureRecognizer(target: self, action: #selector(createView))
         newView.addGestureRecognizer(tap)
+        newView.isUserInteractionEnabled = true
         animateAndRemoveSubviews()
     }
     
