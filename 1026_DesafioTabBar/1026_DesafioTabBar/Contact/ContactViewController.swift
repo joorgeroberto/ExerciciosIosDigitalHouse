@@ -32,12 +32,18 @@ class ContactViewController: UIViewController {
 }
 extension ContactViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        print("Aqui!!")
         if(indexPath.row == 1){
-            guard let url = URL(string: "mailto:jorgercj@dcomp.ufs.br") else { return }
+            print("Aqui!!")
+            guard let url = URL(string: "mailto://jorgercj@dcomp.ufs.br") else { return }
             UIApplication.shared.open(url)
         }
         if(indexPath.row == 2){
-            guard let url = URL(string: "https://www.digitalhouse.com/") else { return }
+            print("Aqui!!")
+            //guard let url = URL(string: "https://www.digitalhouse.com/") else { return }
+            
+            guard let url = URL(string: "mailto://jorgercj@dcomp.ufs.br") else { return }
             UIApplication.shared.open(url)
         }
     }
