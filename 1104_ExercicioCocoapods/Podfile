@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '1104_ExercicioCocoapods' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for 1104_ExercicioCocoapods
+
+  pod 'Kingfisher', '~> 5.15'
+
+  target '1104_ExercicioCocoapodsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target '1104_ExercicioCocoapodsUITests' do
+    # Pods for testing
+  end
+
+end
