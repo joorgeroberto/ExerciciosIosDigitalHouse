@@ -9,12 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var productSearchBar: UISearchBar!
     
     var listManager = ListsManager(open: [Item](), completed: [Item]())
     override func viewDidLoad() {
         super.viewDidLoad()
         listTableView.delegate = self
         listTableView.dataSource = self
+        productSearchBar.delegate = self
         
         listManager.insert(item: Item(name: "Morango"), list: 0)
         listManager.insert(item: Item(name: "Cebola"), list: 1)
@@ -27,6 +29,15 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate{
     
 }
+
+extension ViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+
+    }
+    
+}
+
 extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2

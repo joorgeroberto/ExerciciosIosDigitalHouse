@@ -1,0 +1,6 @@
+framework module Pods_1111_ExercicioApi {
+  umbrella header "Pods-1111_ExercicioApi-umbrella.h"
+
+  export *
+  module * { export * }
+}

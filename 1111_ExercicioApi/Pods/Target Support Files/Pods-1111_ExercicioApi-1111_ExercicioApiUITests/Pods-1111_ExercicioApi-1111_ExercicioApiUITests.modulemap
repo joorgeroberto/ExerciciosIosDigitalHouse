@@ -1,0 +1,6 @@
+framework module Pods_1111_ExercicioApi_1111_ExercicioApiUITests {
+  umbrella header "Pods-1111_ExercicioApi-1111_ExercicioApiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
