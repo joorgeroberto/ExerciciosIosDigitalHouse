@@ -16,7 +16,7 @@ class Season : NSObject, NSCoding{
 
     var endDate : String!
     var id : Int!
-    var image : AnyObject!
+    var image : String!
     var name : String!
     var number : Int!
     var premiereDate : String!
@@ -28,10 +28,15 @@ class Season : NSObject, NSCoding{
     init(fromDictionary dictionary: [String:Any]){
         endDate = dictionary["endDate"] as? String
         id = dictionary["id"] as? Int
-        image = dictionary["image"] as? AnyObject
-        name = dictionary["name"] as? String
+        image = dictionary["image"] as? String
         number = dictionary["number"] as? Int
         premiereDate = dictionary["premiereDate"] as? String
+        name = dictionary["name"] as? String
+        if let apiName = name {
+            if apiName.count == 0 {
+                name = "Season \(number!)"
+            }
+        }
     }
 
     /**
@@ -49,7 +54,7 @@ class Season : NSObject, NSCoding{
         if image != nil{
             dictionary["image"] = image
         }
-        if name != nil{
+        if name != nil {
             dictionary["name"] = name
         }
         if number != nil{
@@ -69,7 +74,7 @@ class Season : NSObject, NSCoding{
     {
          endDate = aDecoder.decodeObject(forKey: "endDate") as? String
          id = aDecoder.decodeObject(forKey: "id") as? Int
-         image = aDecoder.decodeObject(forKey: "image") as? AnyObject
+         image = aDecoder.decodeObject(forKey: "image") as? String
          name = aDecoder.decodeObject(forKey: "name") as? String
          number = aDecoder.decodeObject(forKey: "number") as? Int
          premiereDate = aDecoder.decodeObject(forKey: "premiereDate") as? String

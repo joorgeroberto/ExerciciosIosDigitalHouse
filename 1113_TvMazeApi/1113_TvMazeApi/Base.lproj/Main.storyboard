@@ -31,13 +31,19 @@
                                                     <rect key="frame" x="86" y="10" width="318" height="46"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXn-LW-Hos">
-                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-R3-ptD">
-                                                            <rect key="frame" x="0.0" y="25.5" width="318" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="17" width="318" height="12"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnY-G8-wnf">
+                                                            <rect key="frame" x="0.0" y="34" width="318" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -66,6 +72,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="ratingLabel" destination="WnY-G8-wnf" id="YWl-Cq-qF1"/>
                                             <outlet property="showImage" destination="Tcu-Aj-y2B" id="xRy-qM-8TO"/>
                                             <outlet property="subtitleLabel" destination="UPd-R3-ptD" id="Tm1-Ia-dcD"/>
                                             <outlet property="titleLabel" destination="LXn-LW-Hos" id="WgA-Wa-STh"/>

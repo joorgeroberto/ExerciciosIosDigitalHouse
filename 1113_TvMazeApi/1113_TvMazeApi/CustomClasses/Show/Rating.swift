@@ -7,14 +7,14 @@ import Foundation
 
 class Rating : NSObject, NSCoding{
 
-	var average : AnyObject!
+	var average : Double!
 
 
 	/**
 	 * Instantiate the instance using the passed dictionary values to set the properties values
 	 */
 	init(fromDictionary dictionary: [String:Any]){
-		average = dictionary["average"] as? AnyObject
+		average = dictionary["average"] as? Double
 	}
 
 	/**
@@ -35,7 +35,7 @@ class Rating : NSObject, NSCoding{
     */
     @objc required init(coder aDecoder: NSCoder)
 	{
-         average = aDecoder.decodeObject(forKey: "average") as? AnyObject
+         average = aDecoder.decodeObject(forKey: "average") as? Double
 
 	}
 
