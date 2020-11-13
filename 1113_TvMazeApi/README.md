@@ -1,4 +1,4 @@
-# Exercício Table View
+# Listando Séries de Tv com dados de uma Api
 ## Digital House - Turma 01 - IOS (Swift)
 
 Exercício para o curso da Digital House: IOS usando Swift promovido pelo Programa Santander Coders.<br />
