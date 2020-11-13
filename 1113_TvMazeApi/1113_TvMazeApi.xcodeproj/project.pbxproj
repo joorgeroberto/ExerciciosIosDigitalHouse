@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		0B6800C3255EAECC00E75BA1 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6800C2255EAECC00E75BA1 /* Show.swift */; };
 		0B6800DC255EAFF000E75BA1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6800D6255EAFEF00E75BA1 /* Image.swift */; };
 		0B6800DD255EAFF000E75BA1 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6800D7255EAFEF00E75BA1 /* Rating.swift */; };
+		0B680107255ECFE400E75BA1 /* ShowDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B680106255ECFE400E75BA1 /* ShowDetails.storyboard */; };
+		0B68010C255ED01900E75BA1 /* ShowDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B68010B255ED01900E75BA1 /* ShowDetailsController.swift */; };
+		0B680113255ED44400E75BA1 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B680112255ED44400E75BA1 /* Season.swift */; };
 		286BD5FD5BEEDA28CD24BFF1 /* Pods_1113_TvMazeApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3648F9FC3653632D15316825 /* Pods_1113_TvMazeApiTests.framework */; };
 		4C01140331DE0F223F47B3B9 /* Pods_1113_TvMazeApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BC53984BBACF9E8672ABE7 /* Pods_1113_TvMazeApi.framework */; };
 		9F6F923FAD10C950353C796C /* Pods_1113_TvMazeApi_1113_TvMazeApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689074CDA97C84BD4AF1DFF3 /* Pods_1113_TvMazeApi_1113_TvMazeApiUITests.framework */; };
@@ -60,6 +63,9 @@
 		0B6800C2255EAECC00E75BA1 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		0B6800D6255EAFEF00E75BA1 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		0B6800D7255EAFEF00E75BA1 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		0B680106255ECFE400E75BA1 /* ShowDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowDetails.storyboard; sourceTree = "<group>"; };
+		0B68010B255ED01900E75BA1 /* ShowDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsController.swift; sourceTree = "<group>"; };
+		0B680112255ED44400E75BA1 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		12D2113EB4A443D0F380580E /* Pods-1113_TvMazeApi-1113_TvMazeApiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1113_TvMazeApi-1113_TvMazeApiUITests.debug.xcconfig"; path = "Target Support Files/Pods-1113_TvMazeApi-1113_TvMazeApiUITests/Pods-1113_TvMazeApi-1113_TvMazeApiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15BC53984BBACF9E8672ABE7 /* Pods_1113_TvMazeApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1113_TvMazeApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		307C0D32565D36576CD2A71E /* Pods-1113_TvMazeApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1113_TvMazeApiTests.release.xcconfig"; path = "Target Support Files/Pods-1113_TvMazeApiTests/Pods-1113_TvMazeApiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 		0B680074255EAA8B00E75BA1 /* 1113_TvMazeApi */ = {
 			isa = PBXGroup;
 			children = (
+				0B680105255ECFD200E75BA1 /* ShowDetails */,
 				0B6800C7255EAF3800E75BA1 /* CustomClasses */,
 				0B680075255EAA8B00E75BA1 /* AppDelegate.swift */,
 				0B680077255EAA8B00E75BA1 /* SceneDelegate.swift */,
@@ -158,11 +165,37 @@
 		0B6800C7255EAF3800E75BA1 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				0B680111255ED43500E75BA1 /* Season */,
+				0B680110255ED42B00E75BA1 /* Show */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		0B680105255ECFD200E75BA1 /* ShowDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0B680106255ECFE400E75BA1 /* ShowDetails.storyboard */,
+				0B68010B255ED01900E75BA1 /* ShowDetailsController.swift */,
+			);
+			path = ShowDetails;
+			sourceTree = "<group>";
+		};
+		0B680110255ED42B00E75BA1 /* Show */ = {
+			isa = PBXGroup;
+			children = (
 				0B6800D6255EAFEF00E75BA1 /* Image.swift */,
 				0B6800D7255EAFEF00E75BA1 /* Rating.swift */,
 				0B6800C2255EAECC00E75BA1 /* Show.swift */,
 			);
-			path = CustomClasses;
+			path = Show;
+			sourceTree = "<group>";
+		};
+		0B680111255ED43500E75BA1 /* Season */ = {
+			isa = PBXGroup;
+			children = (
+				0B680112255ED44400E75BA1 /* Season.swift */,
+			);
+			path = Season;
 			sourceTree = "<group>";
 		};
 		736D14ACA2272FB1D520B4D7 /* Pods */ = {
@@ -175,7 +208,6 @@
 				9619FECC20D6AD51EEC39B10 /* Pods-1113_TvMazeApiTests.debug.xcconfig */,
 				307C0D32565D36576CD2A71E /* Pods-1113_TvMazeApiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -297,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B680107255ECFE400E75BA1 /* ShowDetails.storyboard in Resources */,
 				0B680082255EAA8C00E75BA1 /* LaunchScreen.storyboard in Resources */,
 				0B68007F255EAA8C00E75BA1 /* Assets.xcassets in Resources */,
 				0B68007D255EAA8B00E75BA1 /* Main.storyboard in Resources */,
@@ -428,6 +461,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B6800C3255EAECC00E75BA1 /* Show.swift in Sources */,
+				0B680113255ED44400E75BA1 /* Season.swift in Sources */,
+				0B68010C255ED01900E75BA1 /* ShowDetailsController.swift in Sources */,
 				0B68007A255EAA8B00E75BA1 /* ViewController.swift in Sources */,
 				0B680076255EAA8B00E75BA1 /* AppDelegate.swift in Sources */,
 				0B6800DD255EAFF000E75BA1 /* Rating.swift in Sources */,

@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "loadEpisodes()"
+            landmarkName = "loadShows()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
-            landmarkName = "loadEpisodes()"
+            landmarkName = "loadShows()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -64,6 +64,70 @@
                   startingLineNumber = "24"
                   endingLineNumber = "24"
                   offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D4CBEBD-981D-4C67-950C-964FCEFFBDF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "1113_TvMazeApi/ShowDetails/ShowDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "loadSeasons()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FA4B02A-B883-44FA-8199-FEFC0EE6AC0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "1113_TvMazeApi/ShowDetails/ShowDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loadSeasons()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1FA4B02A-B883-44FA-8199-FEFC0EE6AC0F - 81fa09c54b51300d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_113_TvMazeApi.ShowDetailsController.loadSeasons() -&gt; ()"
+                  moduleName = "1113_TvMazeApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgeroberto/Documents/IOS%20Projects/ExerciciosIosDigitalHouse/1113_TvMazeApi/1113_TvMazeApi/ShowDetails/ShowDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "565">
+               </Location>
+               <Location
+                  uuid = "1FA4B02A-B883-44FA-8199-FEFC0EE6AC0F - 32edcb3c9fb95ca1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in _113_TvMazeApi.ShowDetailsController.loadSeasons() -&gt; ()"
+                  moduleName = "1113_TvMazeApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgeroberto/Documents/IOS%20Projects/ExerciciosIosDigitalHouse/1113_TvMazeApi/1113_TvMazeApi/ShowDetails/ShowDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "299">
                </Location>
             </Locations>
          </BreakpointContent>

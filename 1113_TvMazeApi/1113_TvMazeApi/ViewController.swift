@@ -17,15 +17,15 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        loadEpisodes()
+        loadShows()
     }
 
-    func saveEpisodes(arrayShows: [Show]) {
+    func saveShows(arrayShows: [Show]) {
         self.arrayShows = arrayShows
         tableView.reloadData()
     }
     
-    func loadEpisodes() {
+    func loadShows() {
         AF.request("https://api.tvmaze.com/shows?page=1").responseJSON  { response in
             if let arrayDictionary = response.value as? [[String: Any]] {
                 var arrayShows = [Show]()
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
                     arrayShows.append(loadedData)
                 }
                 DispatchQueue.main.async {
-                    self.saveEpisodes(arrayShows: arrayShows)
+                    self.saveShows(arrayShows: arrayShows)
                 }
             }
         }
@@ -45,7 +45,10 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let showDetails = UIStoryboard(name: "ShowDetails", bundle: nil).instantiateInitialViewController() as? ShowDetailsController {
+            showDetails.show = arrayShows[indexPath.row]
+            navigationController?.pushViewController(showDetails, animated: true)
+        }
     }
 }
 
