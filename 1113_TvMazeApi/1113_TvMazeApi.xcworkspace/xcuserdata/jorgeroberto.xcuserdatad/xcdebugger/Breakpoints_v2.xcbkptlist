@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "75854638-EDF4-4185-88C7-ECCDF231C6DA"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44849B36-3862-4C2F-897A-8FF59954DE18"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "1113_TvMazeApi/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadEpisodes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECFE56E5-23DE-422F-A900-21EB3A53D968"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "1113_TvMazeApi/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loadEpisodes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ECFE56E5-23DE-422F-A900-21EB3A53D968 - 2633ea6de5a300c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_113_TvMazeApi.ViewController.loadEpisodes() -&gt; ()"
+                  moduleName = "1113_TvMazeApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgeroberto/Documents/IOS%20Projects/ExerciciosIosDigitalHouse/1113_TvMazeApi/1113_TvMazeApi/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "ECFE56E5-23DE-422F-A900-21EB3A53D968 - 1d02914587c48017"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in _113_TvMazeApi.ViewController.loadEpisodes() -&gt; ()"
+                  moduleName = "1113_TvMazeApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jorgeroberto/Documents/IOS%20Projects/ExerciciosIosDigitalHouse/1113_TvMazeApi/1113_TvMazeApi/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

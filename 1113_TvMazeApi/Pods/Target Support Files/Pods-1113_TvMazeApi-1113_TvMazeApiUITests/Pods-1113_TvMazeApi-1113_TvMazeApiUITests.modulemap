@@ -1,0 +1,6 @@
+framework module Pods_1113_TvMazeApi_1113_TvMazeApiUITests {
+  umbrella header "Pods-1113_TvMazeApi-1113_TvMazeApiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
