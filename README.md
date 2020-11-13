@@ -9,3 +9,5 @@ Curso promovido pelo Programa Santander Coders.<br/>
 * [Exercício Navigation](https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/tree/master/ExercicioNavigation)
 * [Exercício Table View](https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/tree/master/0925_ExercicioTableView)
 * [Desafio Table View Avançado](https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/tree/master/0928_DeafioTableView)
+
+* [Listando Séries de Tv com dados de uma Api](https://github.com/joorgeroberto/ExerciciosIosDigitalHouse/tree/master/1113_TvMazeApi)
