@@ -5,29 +5,36 @@
 //  Created by Jorge Roberto on 06/11/20.
 //
 
+//Crie um app que:
+//Possua uma lista de várias localicações de lugares, com suas categorias.
+//Ex: Supermercado Angeloni - MERCADO, Hotel Transilvânia - HOTEL
+//Deve haver um filtro de categorias, de modo que o usuário possa filtrar entre as categorias.
+//Quando filtrar a categoria, deve exibir no mapa todos os lugares correspondentes aquela categoria.
+
 import UIKit
 import MapKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         mapView.delegate = self
+        segmentedControl.setTitle("Hotel", forSegmentAt: 0)
+        segmentedControl.setTitle("Supermercado", forSegmentAt: 1)
+        segmentedControl.setTitle("Restaurante", forSegmentAt: 2)
         
         let location = CLLocation(latitude: -10.946477, longitude: -37.072436)
-        let customLocation = CustomLocation(coordinate: location.coordinate,
-                                                    title: "Casa de Tia Lucia",
-                                                    subtitle: "SUBTITULO",
-                                                    category: "CATEGORIA")
+        let customLocation = CustomLocation(coordinate: location.coordinate, title: "Casa de Tia Lucia", subtitle: "SUBTITULO", category: "CATEGORIA")
                 
                 
                 
-                mapView.addAnnotation(customLocation)
-        //        mapView.removeAnnotations(mapView.annotations)
-        //        mapView.addAnnotations(array)
-                centerMapOn(location: location)
+        mapView.addAnnotation(customLocation)
+        // mapView.removeAnnotations(mapView.annotations)
+        // mapView.addAnnotations(array)
+        centerMapOn(location: location)
     }
     
     override func viewDidAppear(_ animated: Bool) {
