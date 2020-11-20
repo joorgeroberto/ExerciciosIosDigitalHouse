@@ -1,0 +1,6 @@
+framework module Pods_1120_DesafioMvc {
+  umbrella header "Pods-1120_DesafioMvc-umbrella.h"
+
+  export *
+  module * { export * }
+}
