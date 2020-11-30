@@ -1,0 +1,6 @@
+framework module Pods_1130_MvvmFipe {
+  umbrella header "Pods-1130_MvvmFipe-umbrella.h"
+
+  export *
+  module * { export * }
+}

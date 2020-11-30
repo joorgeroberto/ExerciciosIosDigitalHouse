@@ -1,0 +1,6 @@
+framework module Pods_1130_MvvmFipe_1130_MvvmFipeUITests {
+  umbrella header "Pods-1130_MvvmFipe-1130_MvvmFipeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
