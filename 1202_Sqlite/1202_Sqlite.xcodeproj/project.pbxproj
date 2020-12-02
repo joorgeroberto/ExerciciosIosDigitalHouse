@@ -10,6 +10,11 @@
 		0B7E7ADA2577D1100049CC95 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E7AD92577D1100049CC95 /* Brand.swift */; };
 		0B7E7ADF2577D2600049CC95 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E7ADE2577D2600049CC95 /* BrandCell.swift */; };
 		0BE4CCD92577D64D00C2D729 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4CCD82577D64D00C2D729 /* Favorite.swift */; };
+		0BE4CCE42577DC6500C2D729 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4CCE32577DC6500C2D729 /* ViewModelProtocol.swift */; };
+		0BE4CCE92577DC7E00C2D729 /* BrandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4CCE82577DC7E00C2D729 /* BrandViewModel.swift */; };
+		0BE4CCEE2577DCCC00C2D729 /* FipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4CCED2577DCCC00C2D729 /* FipeAPI.swift */; };
+		0BE4CCF42577DD0700C2D729 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4CCF32577DD0700C2D729 /* APIManager.swift */; };
+		0BE4CD102577E10400C2D729 /* TableViewDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4CD0F2577E10400C2D729 /* TableViewDelegateDataSource.swift */; };
 		0BE5A7352577D0270011DDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5A7342577D0270011DDA1 /* AppDelegate.swift */; };
 		0BE5A7372577D0270011DDA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5A7362577D0270011DDA1 /* SceneDelegate.swift */; };
 		0BE5A7392577D0270011DDA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5A7382577D0270011DDA1 /* ViewController.swift */; };
@@ -44,6 +49,11 @@
 		0B7E7AD92577D1100049CC95 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		0B7E7ADE2577D2600049CC95 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
 		0BE4CCD82577D64D00C2D729 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		0BE4CCE32577DC6500C2D729 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		0BE4CCE82577DC7E00C2D729 /* BrandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewModel.swift; sourceTree = "<group>"; };
+		0BE4CCED2577DCCC00C2D729 /* FipeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FipeAPI.swift; sourceTree = "<group>"; };
+		0BE4CCF32577DD0700C2D729 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0BE4CD0F2577E10400C2D729 /* TableViewDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateDataSource.swift; sourceTree = "<group>"; };
 		0BE5A7312577D0270011DDA1 /* 1202_Sqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1202_Sqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE5A7342577D0270011DDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BE5A7362577D0270011DDA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +120,52 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		0BE4CCDD2577DBE600C2D729 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BE4CCE32577DC6500C2D729 /* ViewModelProtocol.swift */,
+				0BE4CCE82577DC7E00C2D729 /* BrandViewModel.swift */,
+				0BE4CCED2577DCCC00C2D729 /* FipeAPI.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BE4CCDE2577DBEC00C2D729 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0BE4CCFB2577DD8900C2D729 /* TableViewDelegateDataSource */,
+				0BE5A73F2577D0270011DDA1 /* LaunchScreen.storyboard */,
+				0BE5A73A2577D0270011DDA1 /* Main.storyboard */,
+				0BE5A7382577D0270011DDA1 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0BE4CCDF2577DBF100C2D729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B7E7AD92577D1100049CC95 /* Brand.swift */,
+				0BE4CCD82577D64D00C2D729 /* Favorite.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BE4CCF22577DCF900C2D729 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				0BE4CCF32577DD0700C2D729 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		0BE4CCFB2577DD8900C2D729 /* TableViewDelegateDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0BE4CD0F2577E10400C2D729 /* TableViewDelegateDataSource.swift */,
+			);
+			path = TableViewDelegateDataSource;
+			sourceTree = "<group>";
+		};
 		0BE5A7282577D0270011DDA1 = {
 			isa = PBXGroup;
 			children = (
@@ -135,16 +191,15 @@
 		0BE5A7332577D0270011DDA1 /* 1202_Sqlite */ = {
 			isa = PBXGroup;
 			children = (
+				0BE4CCF22577DCF900C2D729 /* APIManager */,
+				0BE4CCDF2577DBF100C2D729 /* Model */,
+				0BE4CCDE2577DBEC00C2D729 /* ViewController */,
+				0BE4CCDD2577DBE600C2D729 /* ViewModel */,
 				0BE5A7342577D0270011DDA1 /* AppDelegate.swift */,
 				0BE5A7362577D0270011DDA1 /* SceneDelegate.swift */,
-				0BE5A7382577D0270011DDA1 /* ViewController.swift */,
-				0BE5A73A2577D0270011DDA1 /* Main.storyboard */,
 				0BE5A73D2577D0270011DDA1 /* Assets.xcassets */,
-				0BE5A73F2577D0270011DDA1 /* LaunchScreen.storyboard */,
 				0BE5A7422577D0270011DDA1 /* Info.plist */,
-				0B7E7AD92577D1100049CC95 /* Brand.swift */,
 				0B7E7ADE2577D2600049CC95 /* BrandCell.swift */,
-				0BE4CCD82577D64D00C2D729 /* Favorite.swift */,
 			);
 			path = 1202_Sqlite;
 			sourceTree = "<group>";
@@ -417,9 +472,14 @@
 			files = (
 				0B7E7ADF2577D2600049CC95 /* BrandCell.swift in Sources */,
 				0BE5A7392577D0270011DDA1 /* ViewController.swift in Sources */,
+				0BE4CCF42577DD0700C2D729 /* APIManager.swift in Sources */,
+				0BE4CCE92577DC7E00C2D729 /* BrandViewModel.swift in Sources */,
+				0BE4CCEE2577DCCC00C2D729 /* FipeAPI.swift in Sources */,
 				0B7E7ADA2577D1100049CC95 /* Brand.swift in Sources */,
 				0BE4CCD92577D64D00C2D729 /* Favorite.swift in Sources */,
+				0BE4CCE42577DC6500C2D729 /* ViewModelProtocol.swift in Sources */,
 				0BE5A7352577D0270011DDA1 /* AppDelegate.swift in Sources */,
+				0BE4CD102577E10400C2D729 /* TableViewDelegateDataSource.swift in Sources */,
 				0BE5A7372577D0270011DDA1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
