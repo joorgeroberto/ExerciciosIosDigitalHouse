@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import NAMDatabase
 
 class ViewController: UIViewController {
     @IBOutlet weak var valueTextField: UITextField!

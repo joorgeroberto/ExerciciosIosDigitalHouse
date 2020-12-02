@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-1202_Sqlite-1202_SqliteUITests/Pods-1202_Sqlite-1202_SqliteUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/NAMDatabase/NAMDatabase.framework
